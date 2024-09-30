@@ -5,4 +5,6 @@
 
 </script>
 
-<h1>Current Slug: {slug}</h1>
+<section class="container section">
+	<h1>Current Slug: {slug}</h1>
+</section>

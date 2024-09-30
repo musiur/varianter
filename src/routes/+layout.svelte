@@ -1,14 +1,18 @@
 <script lang="ts">
+	import '../app.css';
 	// types
-	import type { Type___NavbarLink } from '$lib/types/types';
+	import type { Type___NavbarLink } from '@/types/types';
 	// components
-	import Navbar from '$lib/components/c__navbar.svelte';
+	import Header from '$lib/components/c__navbar.svelte';
+	import Footer from '$lib/components/c__footer.svelte';
 	// contexts - stores
 	import { Store___Auth } from '$lib/stores/s__auth';
 	import { setContext } from 'svelte';
+	
+	
 
 	// context and store configuration
-	setContext("store___auth", Store___Auth)
+	setContext('store___auth', Store___Auth);
 
 	// data slot
 	const Data___NavLinks: Type___NavbarLink[] = [
@@ -18,7 +22,8 @@
 	];
 </script>
 
+<Header links={Data___NavLinks}></Header>
 <main>
-	<Navbar links={Data___NavLinks} />
 	<slot />
 </main>
+<Footer />

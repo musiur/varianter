@@ -10,7 +10,6 @@ export const Store___Auth = writable<Type___StoreAuth>(getStoredData("auth"));
 Store___Auth.subscribe((value: Type___StoreAuth | null) => storeSubscriber("auth", value));
 
 
-
 /**
  * Evenet handler for login
  * @param payload 

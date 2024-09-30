@@ -1,9 +1,3 @@
-<script>
-	import { page } from '$app/stores';
-
-	$: searchParams = $page.url.searchParams;
-
-	$: myParam = searchParams.get('test');
-</script>
-
-<h1>Search Params: {myParam}</h1>
+<div class="container section">
+	<h1>Welcome to Varianter</h1>
+</div>
