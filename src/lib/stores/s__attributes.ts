@@ -19,6 +19,7 @@ Store___Attributes.subscribe((value: Type___Attribute[]) => storeSubscriber("att
 
 
 
+
 // event handlers
 export const Store___Attributes__AddNew = (payload: Type___Attribute) => {
     Store___Attributes.update((attributes: Type___Attribute[]) => [...attributes, payload])

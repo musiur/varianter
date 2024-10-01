@@ -12,6 +12,7 @@
 	import Input from "@/components/shadcn/ui/input/input.svelte";
 
 	let attributes: Type___Attribute[] = Default___Attributes;
+
 	const unsubscribe = Store___Attributes.subscribe(
 		(value: Type___Attribute[]) => (attributes = value)
 	);
