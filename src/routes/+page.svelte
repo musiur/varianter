@@ -3,6 +3,5 @@
 </script>
 
 <div class="section container">
-	<h1>Welcome to Varianter</h1>
 	<Generator />
 </div>

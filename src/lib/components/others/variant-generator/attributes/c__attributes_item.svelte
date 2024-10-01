@@ -58,7 +58,7 @@
 				{#each attribute.values as value}
 					<div class="flex items-center gap-2 rounded bg-gray-300 px-2 py-1 text-xs">
 						{value}<button
-							class={clsx('rounded bg-gray-600 px-1 text-white', {
+							class={clsx('rounded-full h-4 w-4 flex items-center justify-center bg-gray-600 text-white', {
 								block: editable,
 								hidden: !editable
 							})}
@@ -68,13 +68,13 @@
 				{/each}
 			</div>
 			<div
-				class={clsx('grid grid-cols-1 gap-1 pt-2', {
+				class={clsx('flex items-center gap-1 pt-2', {
 					block: editable,
 					hidden: !editable
 				})}
 			>
 				<Input bind:value={newValue} />
-				<button on:click={handleNewValue}>Add</button>
+				<Button on:click={handleNewValue}>Add</Button>
 			</div>
 		</div>
 	</div>

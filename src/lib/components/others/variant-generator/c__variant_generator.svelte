@@ -13,4 +13,4 @@
 
 <Attributes />
 
-<pre>{JSON.stringify(attributes)}</pre>
+<pre class="max-w-2xl text-wrap">{JSON.stringify(attributes)}</pre>
