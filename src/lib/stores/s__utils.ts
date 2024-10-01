@@ -3,10 +3,10 @@
  * @param name 
  * @returns any
  */
-export const getStoredData = (name: string) => {
+export const getStoredData = (name: string, defaultValue?: any) => {
     if (typeof window !== 'undefined') {
         const storedData = localStorage.getItem(name);
-        return storedData ? JSON.parse(storedData || "") : null;
+        return storedData ? JSON.parse(storedData || "") : defaultValue || null;
     }
     return null;
 };

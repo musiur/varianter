@@ -4,7 +4,7 @@
 	import { Store___Attributes } from '@/stores/s__attributes';
 	import { onDestroy } from 'svelte';
 
-	let attributes: Type___Attribute[] = [];
+	let attributes: Type___Attribute[];
 	const unsubscribe = Store___Attributes.subscribe(
 		(values: Type___Attribute[]) => (attributes = values)
 	);

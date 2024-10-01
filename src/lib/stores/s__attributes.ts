@@ -13,7 +13,7 @@ export const Default___Attributes = [
     }
 ]
 
-export const Store___Attributes = writable<Type___Attribute[]>(getStoredData("attributes"));
+export const Store___Attributes = writable<Type___Attribute[]>(getStoredData("attributes", Default___Attributes));
 Store___Attributes.subscribe((value: Type___Attribute[]) => storeSubscriber("attributes", value || Default___Attributes))
 
 
