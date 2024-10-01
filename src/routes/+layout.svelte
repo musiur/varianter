@@ -23,7 +23,7 @@
 </script>
 
 <Header links={Data___NavLinks}></Header>
-<main>
+<main class="bg-muted">
 	<slot />
 </main>
 <Footer />
